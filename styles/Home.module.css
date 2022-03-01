@@ -1,0 +1,26 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main article {
+  padding: 6rem 0;
+}
+
+.floatingShop{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1000;
+}
+
+@media only screen and (max-width: 576px) {
+  .main article {
+    padding: 2rem 0;
+  }
+}

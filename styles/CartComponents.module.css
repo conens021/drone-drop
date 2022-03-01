@@ -1,0 +1,102 @@
+.cart {
+    padding: 2rem 1.5rem;
+    border-radius: 2rem;
+    background-color: #FFFFFF;
+    min-width: 396px;
+    max-width: 396px;
+    min-height: 520px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cartItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+}
+
+
+.cartItemImageContainer {
+    position: relative;
+    width: 3.5em;
+    min-width: 3rem;
+    height: 3rem;
+}
+
+.cartItemImageContainer>div {
+    position: unset !important;
+}
+
+.cartItemImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+.itemTitle {
+    flex: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 130%;
+    color: '#4D4D4D';
+
+}
+
+.itemPrice {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 130%;
+    color: #4D4D4D;
+}
+
+.cartTotal{
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.cartTotal > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartTotal .text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    letter-spacing: 130%;
+    color: #ABABAB;
+    text-transform: capitalize;
+}
+
+.deliveryCost{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 130%;
+    color: #82C94C;
+    text-transform: uppercase;
+}
+
+.totalAmount{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 130%;
+    color: #2F2F2F;
+    text-transform: uppercase;
+}

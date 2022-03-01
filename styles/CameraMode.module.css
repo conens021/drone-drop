@@ -1,0 +1,43 @@
+.main {
+    background: url("/images/Ellipse 19.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -90%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.eclipseImageContainer {
+    position: absolute;
+    background-color: transparent !important;
+    width: 1009.5px;
+    height: 1009.5px;
+    right: -40px;
+    overflow: hidden;
+    bottom: -110%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.eclipseImageContainer>div {
+    position: unset !important;
+    overflow: hidden;
+
+}
+
+.eclipseImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+    background-color: transparent !important;
+}
+
+@media only screen and (max-width: 576px) {
+    .main {
+        background-position-y: -150%;
+        height: 100vh;
+    }
+}

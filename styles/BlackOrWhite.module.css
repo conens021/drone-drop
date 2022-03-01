@@ -1,0 +1,145 @@
+.blackOrWhiteContent {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 !important;
+}
+
+/*BLACK*/
+.black {
+    background-color: #0D0D0D;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.blackWrapper {
+    max-width: 683.5px;
+    margin-left: auto;
+    height: 100%;
+    padding: 6rem 0;
+}
+
+.blackDroneImageContainer {
+    position: absolute;
+    width: 564px;
+    min-width: 270px;
+    height: 543.86px;
+    bottom: -80px;
+    right: -60px;
+}
+
+.blackDroneImageContainer>div {
+    position: unset !important;
+}
+
+.blackDroneImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+/*WHITE*/
+.white {
+    background-color: #F5F5F5;
+    color: black;
+}
+
+.whiteWrapper {
+    max-width: 683.5px;
+    margin-right: auto;
+    height: 100%;
+    position: relative;
+}
+
+.whiteDroneImageContainer {
+    position: absolute;
+    width: 564px;
+    min-width: 270px;
+    height: 543.86px;
+    top: 20px;
+    left: -20px;
+}
+
+.whiteDroneImageContainer>div {
+    position: unset !important;
+}
+
+.whiteDroneImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+.heading {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 0.5rem;
+}
+
+.heading h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.textContent {
+    padding-right: 13rem;
+}
+
+.textContentBottom {
+    position: absolute;
+    bottom: 0;
+    padding-left: 13rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .blackOrWhiteContent {
+        grid-template-columns: 1fr;
+
+    }
+
+    .textContent {
+        padding-right: 0;
+        padding: 0 2rem;
+    }
+
+
+    .textContentBottom {
+        position: relative;
+        padding-left: 0;
+        padding: 0 2rem;
+    }
+
+
+    .blackDroneImageContainer {
+        position: absolute;
+        min-width: 100%;
+        max-width: 100%;
+        height: 380px;
+        bottom: -5px;
+    }
+
+    .whiteDroneImageContainer {
+        position: absolute;
+        min-width: 100%;
+        max-width: 100%;
+        height: 380px;
+        top: 219px;
+    }
+    .black {
+        padding-bottom: 15rem;
+        min-height: 60vh;
+    }
+
+    .white {
+        padding-top: 5rem;
+        padding-bottom: 20rem;
+        min-height: 60vh;
+    }
+
+}

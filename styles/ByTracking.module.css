@@ -1,0 +1,129 @@
+.byTrackingContent {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.byTrackingContent .containerWrapper {
+    display: flex;
+    flex-direction: column;
+    column-gap: 5rem;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+.containerWrapper>div {
+    display: grid;
+    grid-template-columns: 6fr 1fr 3fr;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.byTrackingText {
+    padding-right: 8rem;
+}
+
+.heading {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 0.5rem;
+}
+
+.heading h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.byTrackingCharts {
+    display: flex;
+}
+
+.chartsContainer {
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    column-gap: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.byTrackingImageContainer {
+    position: absolute;
+    width: 1000px;
+    min-width: 270px;
+    height: 1000px;
+    bottom: -250px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.byTrackingImageContainer>div {
+    position: unset !important;
+}
+
+.byTrackingImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+
+.flyingDroneImageContainer {
+    position: relative;
+    width: 516;
+    min-width: 180px;
+    height: 234px;
+}
+
+.flyingDroneImageContainer>div {
+    position: unset !important;
+}
+
+.flyingDroneImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+@media only screen and (max-width: 576px) {
+    .containerWrapper>div {
+        grid-template-columns: 1fr;
+    }
+
+    .byTrackingImageContainer {
+        min-width: 100%;
+        max-width: 100%;
+        height: 380px;
+    }
+
+    .containerWrapper>div {
+        align-items: center;
+    }
+
+    .byTrackingText {
+        padding-right: 0;
+    }
+
+    .byTrackingCharts {
+        flex-direction: column;
+    }
+
+
+    .byTrackingImageContainer {
+        width: 650px;
+        min-width: 270px;
+        height: 650px;
+        bottom: -200px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+}

@@ -1,0 +1,85 @@
+.controllerContent {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.controllerContent .containerWrapper {
+    display: flex;
+    flex-direction: column;
+    column-gap: 5rem;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+.containerWrapper > div{
+    display: grid;
+    grid-template-columns: 6fr 1fr 3fr;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.controllerText{
+    padding-right: 8rem;
+}
+
+.heading{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 0.5rem;
+}
+
+.heading h2{
+    padding: 0;
+    margin: 0;
+}
+
+.controllerCharts{
+    display: flex;
+}
+
+.chartsContainer{
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    column-gap: 1rem;    
+    position: relative;
+    z-index: 1;
+}
+
+.controllerImageContainer {
+    position: relative;
+    width: 600px;
+    min-width: 270px;
+    height: 600px;
+}
+
+.controllerImageContainer>div {
+    position: unset !important;
+}
+
+.controllerImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+@media only screen and (max-width: 576px) {
+    .controllerImageContainer {
+        min-width: 100%;
+        max-width: 100%;
+        height: 380px;
+    }
+    .containerWrapper > div{
+        align-items: center;
+    }
+    .controllerText{
+        padding-right: 0;
+    }
+    .controllerCharts{
+        flex-direction: column;
+    }
+}

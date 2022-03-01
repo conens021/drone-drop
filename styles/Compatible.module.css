@@ -1,0 +1,56 @@
+.compatibleContent {
+    min-height: 100vh;
+    width: 100%;
+    background-color:white;
+    position: relative;
+}
+
+.compatibleContent .containerWrapper {
+    display: flex;
+    flex-direction: column;
+    column-gap: 5rem;
+    align-items: center;
+    width: 630px;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.containerWrapper h2{
+    padding: 0;
+    margin: 0;
+}
+
+
+.droneInHandImageContainer {
+    position: absolute;
+    width: 600px;
+    min-width: 270px;
+    height: 600px;
+    right: 0;
+    top: 0;
+}
+
+.droneInHandImageContainer>div {
+    position: unset !important;
+}
+
+.droneInHandImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+@media only screen and (max-width: 576px) {
+    .droneInHandImageContainer {
+        min-width: 100%;
+        max-width: 100%;
+        height: 380px;
+    }
+}

@@ -1,0 +1,21 @@
+.footer {
+    height: 400px;
+    width: 100%;
+    background-color: #111111;
+    clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%, 0 26%);
+    padding-left: 28%;
+    padding-top: 10%;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.footerListHeader {
+    margin-bottom: .8rem; 
+}
