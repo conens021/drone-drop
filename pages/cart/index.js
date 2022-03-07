@@ -1,9 +1,6 @@
-import { Button } from "@mui/material";
 import Head from "next/head";
-import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import styles from "../../styles/Cart.module.css";
-import Link from "next/link";
 import Cart from "../../components/Cart";
 
 export default function CartPage() {
@@ -18,28 +15,7 @@ export default function CartPage() {
         <div className="container">
           <h1 className="page-title">Check Yor Order</h1>
           <Cart />
-          <div className="actionButtons">
-            <Link href="/battery-options" replace>
-              <Button
-                color="primary"
-                variant="contained"
-                size="large"
-                className="button"
-              >
-                BACK
-              </Button>
-            </Link>
-            <Link href="/battery-options" replace>
-              <Button
-                color="secondary"
-                variant="contained"
-                size="large"
-                className="button"
-              >
-                NEXT
-              </Button>
-            </Link>
-          </div>
+    
         </div>
       </main>
     </React.Fragment>

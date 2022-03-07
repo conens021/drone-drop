@@ -1,5 +1,6 @@
-import { Divider, Paper } from "@mui/material";
+import { Button, Divider, Paper } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../../styles/CartComponents.module.css";
 
 function Cart() {
@@ -51,15 +52,37 @@ function Cart() {
           <div className="amount">$255.22</div>
         </div>
         <div className="delivery-cost">
-        <div className={styles.text}>Delivery Cost</div>
+          <div className={styles.text}>Delivery Cost</div>
           <div className={styles.deliveryCost}>FREE</div>
         </div>
         <div className="total">
-        <div className={styles.text}>Total Amount</div>
+          <div className={styles.text}>Total Amount</div>
           <div className={styles.totalAmount}>$255.22</div>
         </div>
       </div>
       <Divider />
+      <div className="actionButtons" style={{paddingTop:'2rem',paddingBottom:'1rem'}}>
+        <Link href="/battery-options" replace>
+          <Button
+            color="primary"
+            variant="contained"
+            size="large"
+            className="button"
+          >
+            BACK
+          </Button>
+        </Link>
+        <Link href="/checkout" replace>
+          <Button
+            color="secondary"
+            variant="contained"
+            size="large"
+            className="button"
+          >
+            CHECKOUT
+          </Button>
+        </Link>
+      </div>
     </Paper>
   );
 }

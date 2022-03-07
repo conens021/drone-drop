@@ -1,0 +1,68 @@
+.main {
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: auto 396px;
+    column-gap: 3rem;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-left: 10rem;
+}
+
+.cartGrid{
+    background-color: yellow;
+    position: relative;
+    align-self: flex-start;
+}
+
+.leftPolyImageContainer {
+    position: absolute;
+    background-color: transparent !important;
+    width: 205px;
+    height: 238px;
+    left: 0;
+    top: 40%;
+}
+
+.leftPolyImageContainer>div {
+    position: unset !important;
+    overflow: hidden;
+}
+
+.leftPolyImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+    background-color: transparent !important;
+}
+
+.rightPolyImageContainer {
+    position: absolute;
+    background-color: transparent !important;
+    width: 874.5px;
+    height: 757.5px;
+    right: -10%;
+    top: 0;
+}
+
+.rightPolyImageContainer>div {
+    position: unset !important;
+    overflow: hidden;
+}
+
+.rightPolyImage {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+    background-color: transparent !important;
+}
+
+

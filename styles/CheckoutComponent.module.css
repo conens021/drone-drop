@@ -1,0 +1,31 @@
+    .checkout {
+        position: relative;
+        padding: 1rem 2rem;
+    }
+
+    .checkout h3{
+        text-align: left;
+    }
+
+
+    .form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: .5rem 0 3rem;
+        column-gap: 3rem;
+    }
+
+
+    .formRow{
+        display: flex;
+        column-gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .fullWidth{
+        flex: 1;
+    }
+
+    .formSection h4{
+        text-transform: uppercase;
+    }
