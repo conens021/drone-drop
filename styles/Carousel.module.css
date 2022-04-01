@@ -26,10 +26,11 @@
 }
 .cardType {
     position: relative;
-    width: 110%;
-    padding: .3rem;
+    width: 85%;
+    padding: .5rem .3rem;
+    border-radius: 25px;
     text-align: center;
-    top: 20px;
+    top: 30px;
     font-size: 1.35rem;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

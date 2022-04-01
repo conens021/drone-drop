@@ -1,8 +1,12 @@
+import { cameraType, cartType } from '../enums/index'
+
 export const cameraData = [
   {
     id: 1,
     title: "1080p Single Camera",
-    price: "FREE",
+    price: 0.00,
+    type: cameraType.HD,
+    cartType: cartType.CAMERA,
     image: {
       src: "objektiv-edited-1.png",
       width: 75,
@@ -19,7 +23,9 @@ export const cameraData = [
   {
     id: 2,
     title: "4K Single Camera",
-    price: "5.99",
+    price: 6.61,
+    type: cameraType.ULTRA,
+    cartType: cartType.CAMERA,
     image: {
       src: "objektiv-edited-1.png",
       width: 75,
@@ -36,7 +42,9 @@ export const cameraData = [
   {
     id: 3,
     title: "4K Double Camera",
-    price: "9.99",
+    price: 16.5,
+    type: cameraType.ULTRA_DOUBLE,
+    cartType: cartType.CAMERA,
     image: {
       src: "objetkivdouble-edited.png",
       width: 75,

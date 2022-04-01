@@ -1,8 +1,12 @@
+import {batteryType,cartType} from '../enums/index'
+
 export const batteriesData = [
   {
     id: 1,
     title: "Single Battery",
-    price: "FREE",
+    price: 0.00,
+    type: batteryType.SINGLE,
+    cartType : cartType.BATTERY,
     image: {
       src: "batteries.png",
       width: 174,
@@ -13,7 +17,9 @@ export const batteriesData = [
   {
     id: 2,
     title: "2x Batteries Package",
-    price: "5.99",
+    price: 8.23,
+    type: batteryType.DOUBLE,
+    cartType : cartType.BATTERY,
     image: {
       src: "Group 70.png",
       width: 174,
@@ -24,7 +30,9 @@ export const batteriesData = [
   {
     id: 3,
     title: "3x Batteries Package",
-    price: "9.99",
+    price: 15.59,
+    type: batteryType.TRIPLE,
+    cartType : cartType.BATTERY,
     image: {
       src: "Group 71.png",
       width: 174,

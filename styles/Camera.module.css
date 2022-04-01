@@ -2,8 +2,9 @@
     min-height: 100vh;
     width: 100%;
     background-color: #0D0D0D;
-    clip-path: polygon(22% 0, 66% 0, 100% 30%, 100% 100%, 29% 100%, 0 74%, 0 0);
+    clip-path: polygon(0 0, 62% 0, 100% 28%, 100% 100%, 34% 100%, 0 66%);
 }
+
 .cameraContent .containerWrapper {
     display: flex;
     column-gap: 5rem;
@@ -36,12 +37,29 @@
     height: unset !important;
 }
 
+.cameraIconContainer {
+    position: relative;
+    width: 33px;
+    height: 33px;
+}
+
+.cameraIconContainer>div {
+    position: unset !important;
+}
+
+.cameraIcon {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
 .cameraContent .text {
     flex: 1;
     position: relative;
 }
 
-.fourK{
+.fourK {
     font-family: 'Stencil';
     font-size: 12rem;
     position: absolute;
@@ -49,11 +67,11 @@
     left: -3rem;
     margin: 0;
     padding: 0;
-    color:#1E1E1E;
+    color: #1E1E1E;
 }
 
 .cameraContent .text .cameraInfo {
-    padding-right: 7rem;
+    padding-right: 2rem;
     position: relative;
 }
 
@@ -63,12 +81,12 @@
     margin: 0;
 }
 
-.cameraAdditionalInfo{
+.cameraAdditionalInfo {
     display: flex;
     align-items: center;
 }
 
-.cameraAdditionalInfo > div{
+.cameraAdditionalInfo>div {
     display: flex;
     align-items: center;
     flex: 1;
@@ -78,11 +96,27 @@
 .cameraSpan {
     font-family: 'Segoe UI';
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     color: #FFFFFF;
 }
 
+.cameraSpanSecondary {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: .9rem;
+    color: #4D4D4D;
+}
+
 @media only screen and (max-width: 576px) {
+
+    .cameraContent {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #0D0D0D;
+        clip-path:polygon(0 0, 40% 0, 100% 10%, 100% 100%, 60% 100%, 0 90%);
+        padding-top: 7rem !important;
+    }
+
     .cameraImageContainer {
         min-width: 100%;
         max-width: 100%;

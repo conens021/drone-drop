@@ -22,23 +22,23 @@ function ByTracking() {
             </section>
             <div></div>
             <section className={styles.flyingDroneImageContainer}>
-            <Image
-              className={styles.flyingDroneImage}
-              src="/images/DroneFLying.png"
-              layout="fill"
-            />
+              <Image
+                className={styles.flyingDroneImage}
+                src="/images/DroneFLying.png"
+                layout="fill"
+              />
             </section>
           </div>
-     
+
         </div>
       </div>
       <section className={styles.byTrackingImageContainer}>
-            <Image
-              className={styles.byTrackingImage}
-              src="/images/hands2.png"
-              layout="fill"
-            />
-          </section>
+        <Image
+          className={styles.byTrackingImage}
+          src="/images/hands2.png"
+          layout="fill"
+        />
+      </section>
     </article>
   );
 }

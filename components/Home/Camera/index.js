@@ -3,7 +3,7 @@ import styles from "../../../styles/Camera.module.css";
 
 function Camera() {
   return (
-    <article className={styles.cameraContent}>
+    <article className={styles.cameraContent} style={{ zIndex: '2' }}>
       <div className="container">
         <div className={styles.containerWrapper}>
           <section className={styles.cameraImageContainer}>
@@ -26,12 +26,26 @@ function Camera() {
             </div>
             <div className={styles.cameraAdditionalInfo}>
               <div>
+                <div className={styles.cameraIconContainer}>
+                  <Image
+                    className={styles.cameraIcon}
+                    src="/images/icons/lens.png"
+                    layout="fill"
+                  />
+                </div>
                 <div className={styles.cameraSpan}>9</div>
-                <div className="span-secondary">ELEMENT LENS</div>
+                <div className="span-secondary">ELEMENT <br />LENS</div>
               </div>
               <div>
+                <div className={styles.cameraIconContainer}>
+                  <Image
+                    className={styles.cameraIcon}
+                    src="/images/icons/timer.png"
+                    layout="fill"
+                  />
+                </div>
                 <div className={styles.cameraSpan}>30</div>
-                <div className="span-secondary">FPS<br/>4K VIDEO</div>
+                <div className="span-secondary">FPS<br />4K VIDEO</div>
               </div>
             </div>
           </section>

@@ -1,0 +1,77 @@
+.paymentContainer {
+    padding: 2rem 1.5rem;
+    border-radius: 2rem;
+    background-color: #FFFFFF;
+    min-width: 380px;
+    max-width: 380px;
+    min-height: 620px;
+}
+
+.paymentContainer > h3{
+    text-align: center;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+}
+.paymentOption{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+.paymentOption >h4{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.icons{
+    display: flex;
+    column-gap: .5rem;
+}
+
+.rectangleIconContainer {
+    position: relative;
+    width: 2.2rem;
+    min-width: 1.9rem;
+    height: 1.9rem;
+}
+
+.rectangleIconContainer>div {
+    position: unset !important;
+}
+
+.rectangleIcon {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+.wideIconContainer {
+    position: relative;
+    width: 5rem;
+    min-width: 5rem;
+    height: 1.9rem;
+}
+
+.wideIconContainer>div {
+    position: unset !important;
+}
+
+.wideIcon {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+
+
+
+@media only screen and (max-width: 576px) {
+
+}

@@ -1,0 +1,6 @@
+{
+    "ENV" : "LOCAL",
+    "API_URL" : {
+        "LOCAL" : "http://localhost:5081/api"
+    } 
+}

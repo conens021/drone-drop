@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import Image from "next/image";
 import styles from "../../../styles/BlackOrWhite.module.css";
 
@@ -8,7 +9,7 @@ function BlackOrWhite() {
         <div className={styles.blackWrapper}>
           <div className={styles.textContent}>
             <div className={styles.heading}>
-            <div className="sectionNumber">04</div>
+              <div className="sectionNumber">04</div>
               <h2 className="white">BLACK</h2>
             </div>
             <p className={styles.text}>
@@ -17,11 +18,12 @@ function BlackOrWhite() {
               architecto, blanditiis maxime distinctio sed, explicabo placeat
               eos totam minus nisi. Quisquam, aut doloribus!
             </p>
+            <Button variant="outlined" color='primary' size='large' >CHOOSE STYLE</Button>
           </div>
           <section className={styles.blackDroneImageContainer}>
             <Image
               className={styles.blackDroneImage}
-              src="/images/black-edited-final.png"
+              src="/images/black-drone.png"
               layout="fill"
             />
           </section>
@@ -29,16 +31,16 @@ function BlackOrWhite() {
       </section>
       <section className={styles.white}>
         <div className={styles.whiteWrapper}>
-          <section className={styles.whiteDroneImageContainer}>
+          <section className={styles.blackDroneImageContainer}>
             <Image
-              className={styles.whiteDroneImage}
+              className={styles.blackDroneImage}
               src="/images/White-edited-lines.png"
               layout="fill"
             />
           </section>
           <div className={styles.textContentBottom}>
             <div className={styles.heading}>
-            <div className="sectionNumber">05</div>
+              <div className="sectionNumber">05</div>
               <h2>WHITE</h2>
             </div>
             <p className={styles.text}>
@@ -47,6 +49,7 @@ function BlackOrWhite() {
               architecto, blanditiis maxime distinctio sed, explicabo placeat
               eos totam minus nisi. Quisquam, aut doloribus!
             </p>
+            <Button variant="contained" color='primary' size='large' >CHOOSE STYLE</Button>
           </div>
         </div>
       </section>

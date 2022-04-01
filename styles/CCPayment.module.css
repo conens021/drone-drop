@@ -1,0 +1,55 @@
+.paymentContainer {
+    padding: 2rem 1.5rem;
+    border-radius: 2rem;
+    background-color: #FFFFFF;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 660px;
+    display: flex;
+    flex-direction: column;
+}
+
+.paymentContainer > h3{
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    column-gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.rectangleIconContainer {
+    position: relative;
+    width: 2.2rem;
+    min-width: 1.9rem;
+    height: 1.9rem;
+}
+
+.rectangleIconContainer>div {
+    position: unset !important;
+}
+
+.rectangleIcon {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+.formContainer{
+    flex: 1;
+}
+
+.formRow {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.amountToPay{
+    display: flex;
+    justify-content: space-between;
+}

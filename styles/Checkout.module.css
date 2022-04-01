@@ -6,17 +6,16 @@
     position: relative;
 }
 
-.mainGrid{
+.mainGrid {
     display: grid;
     grid-template-columns: auto 396px;
     column-gap: 3rem;
-    align-items: flex-start;
+    align-items: stretch;
     padding-top: 2rem;
     padding-left: 10rem;
 }
 
-.cartGrid{
-    background-color: yellow;
+.cartGrid {
     position: relative;
     align-self: flex-start;
 }
@@ -65,4 +64,14 @@
     background-color: transparent !important;
 }
 
-
+@media only screen and (max-width: 576px) {
+    .mainGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 3rem;
+        align-items: stretch;
+        padding-top: 2rem;
+        padding-left: 0;
+        row-gap: 2rem;
+    }
+}

@@ -1,10 +1,11 @@
 import styled from "@emotion/styled";
 
 export const Card = styled.div`
-  border:2.5px solid transparent;
+  border:3px solid transparent;
+  border-color: ${(props) => (props.chosen ? "#3CB850" : "transparent")};
   box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
   border-radius:30px;
-  cursor:pointer;
+  cursor:${props => props.disabled ? 'not-allowed' : 'pointer'};
   min-height: ${(props) => props.minHeight}px;
   max-height: ${(props) => props.minHeight}px;
   min-width: ${(props) => props.width}px;
@@ -32,6 +33,18 @@ export const Card = styled.div`
     transition : 0.3s;
      
   }
-
-  border-color: ${(props) => (props.chosen ? "green" : "transparent")};
+  & .selected {
+    position: absolute;
+    top: -20px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 0.3rem 0.4rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: visibility 0.3s ease-in, opacity 0.3s ease-in;
+    visibility: ${(props) => (props.chosen ? "visible" : "hidden")};
+    opacity: ${(props) => (props.chosen ? "1" : "0")};
+  }
 `;

@@ -9,6 +9,10 @@
     margin-bottom: 2rem;
 }
 
+.couponeTitle {
+    color: orange;
+}
+
 .cartItems {
     display: flex;
     flex-direction: column;
@@ -61,20 +65,29 @@
     color: #4D4D4D;
 }
 
-.cartTotal{
+.couponeCost {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 130%;
+    color: #82C94C;
+    text-transform: uppercase;
+}
+
+.cartTotal {
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
 
-.cartTotal > div{
+.cartTotal>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.cartTotal .text{
+.cartTotal .text {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.05rem;
     font-weight: 400;
@@ -83,7 +96,7 @@
     text-transform: capitalize;
 }
 
-.deliveryCost{
+.deliveryCost {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
@@ -92,11 +105,20 @@
     text-transform: uppercase;
 }
 
-.totalAmount{
+.totalAmount {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 130%;
     color: #2F2F2F;
     text-transform: uppercase;
+}
+
+@media only screen and (max-width: 576px) {
+    .cart {
+        padding: 2rem 1.5rem;
+        min-width: 343px;
+        max-width: 343px;
+        min-height: 520px;
+    }
 }
